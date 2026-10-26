@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Exam Compass | One stop for exam updates</title>
+<meta name="description" content="Verified exam updates, eligibility filters and a personalised homepage for students and working professionals.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AD%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+<style>:root{--bg:#eef1f4;--ink:#1b263b;--card:#415a77;--cardink:#f4f6f8;--soft:#7b8da8;--pale:#dce0da;--navy:#1b263b;--ok:#9fe0b0;--warn:#ffd28a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e151f;--ink:#e6ebf1;--pale:#c9d0d8;--navy:#0b111a}}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 Inter,system-ui,sans-serif}
+button,input,select{font:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--warn);outline-offset:2px}
+.top{background:var(--card);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px max(16px,5vw)}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}
+.rose{width:54px;height:54px}
+.wm{display:flex;flex-direction:column;line-height:1}
+.wm i{font:italic 400 12px Inter;letter-spacing:.25em;color:#fff}
+.wm b{font-weight:800;font-size:26px;color:#0b111a;-webkit-text-stroke:1px #fff;letter-spacing:.01em}
+nav{display:flex;gap:8px}
+.btn{background:var(--navy);color:#fff;border:1px solid #ffffff33;border-radius:8px;padding:8px 16px;font-weight:600;text-decoration:none;display:inline-block}
+.btn:hover{background:#0b111a}
+.quote{background:var(--soft);color:#0b111a;text-align:center;padding:10px 16px;font-weight:600;cursor:pointer;min-height:44px}
+main{max-width:960px;margin:0 auto;padding:24px max(16px,5vw) 8px;min-height:60vh}
+h1{font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.15;margin:0 0 6px;font-weight:800}
+.sub{margin:0 0 20px;opacity:.8;max-width:56ch}
+.card{background:var(--card);color:var(--cardink);border-radius:14px;overflow:hidden;box-shadow:0 4px 14px #0003;margin-bottom:24px}
+.card>h2{margin:0;background:var(--pale);color:#1b263b;text-align:center;font-size:1.15rem;font-weight:800;padding:10px}
+.card .in{padding:14px 18px}
+.upd{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;padding:12px 0;border-bottom:1px solid #ffffff40;color:inherit;text-decoration:none}
+.upd:last-child{border:0}
+.upd:hover span:nth-child(2){text-decoration:underline}
+.upd small{grid-column:2;opacity:.75}
+.tag{background:var(--navy);border-radius:6px;padding:1px 8px;font-size:.78rem;font-weight:600;white-space:nowrap;align-self:start}
+h3.cta{text-align:center;font-size:1.2rem;margin:28px 0 14px}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:24px}
+.fields button{background:var(--soft);border:2px solid transparent;border-radius:8px;padding:14px;font-weight:700;color:#0b111a}
+.fields button[aria-pressed=true]{border-color:var(--ink);background:var(--pale)}
+.two{display:grid;grid-template-columns:2fr 1fr;gap:20px;align-items:start}
+@media(max-width:700px){.two{grid-template-columns:1fr}}
+.ex{display:grid;grid-template-columns:1fr auto;gap:0 12px;padding:12px 0;border-bottom:1px solid #ffffff40;color:inherit;text-decoration:none}
+.ex:last-child{border:0}
+.ex b{font-size:1.05rem}
+.ex small{opacity:.8}
+.days{align-self:center;background:var(--navy);padding:2px 10px;border-radius:99px;font-size:.8rem;font-weight:600}
+.days.soon{color:var(--warn)}
+.fl label,.fl legend{font-weight:700;display:block;margin:0 0 6px;padding:0}
+.fl fieldset{border:0;padding:0;margin:14px 0 0}
+.fl input[type=range]{width:100%;accent-color:#dce0da}
+.chip{display:flex;gap:8px;align-items:center;padding:3px 0}
+.chip input{accent-color:#dce0da;width:18px;height:18px}
+.empty{padding:16px 0;opacity:.9}
+.reg{background:var(--pale);color:#1b263b;text-align:center;font-weight:800;padding:14px;border-radius:10px;margin-bottom:24px}
+.back{background:none;border:0;color:var(--ink);font-weight:600;padding:0 0 12px;text-decoration:underline}
+.info h1{color:var(--pale)}
+.pill{display:inline-block;border-radius:99px;padding:2px 12px;font-weight:600;font-size:.88rem;background:var(--navy)}
+.pill.ok{color:var(--ok)}.pill.no{color:var(--warn)}
+.info dt{font-weight:800;margin-top:14px}.info dd{margin:2px 0 0}
+.syl{background:#d9d9d9;color:#1b263b;border-radius:10px;padding:10px 14px 10px 32px;margin:6px 0 20px}
+.apply{display:flex;justify-content:center}
+.paper{background:var(--pale);text-align:center;padding:10px}
+.paper button{background:none;border:0;font-weight:700;color:#1b263b}
+footer{background:var(--card);color:#fff;display:flex;flex-wrap:wrap;gap:12px 48px;justify-content:center;padding:20px 5vw}
+footer div{display:flex;flex-direction:column;align-items:flex-start;gap:2px}
+footer .legal{flex-basis:100%;flex-direction:row;justify-content:center;gap:16px}
+footer button{background:none;border:0;color:#fff;padding:0;text-align:left;opacity:.85}
+footer button:hover{text-decoration:underline}
+dialog{border:0;border-radius:14px;padding:22px;width:min(420px,92vw);background:var(--card);color:var(--cardink)}
+dialog::backdrop{background:#000a}
+dialog h2{margin:0 0 12px}
+dialog label{display:block;font-weight:600;margin-top:12px}
+dialog input,dialog select{width:100%;padding:9px 10px;border-radius:8px;border:0;margin-top:4px}
+dialog .row{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+dialog .err{color:var(--warn);min-height:1.4em;margin:8px 0 0}
+dialog .x{float:right;background:none;border:0;color:#fff;font-size:1.4rem}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,40px);background:#0b111a;color:#fff;padding:10px 18px;border-radius:99px;opacity:0;transition:.25s;pointer-events:none}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#" aria-label="Exam Compass home">
+    <svg class="rose" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#fff" stroke="#1b263b" stroke-width="3"/><path d="M50 4 58 42 96 50 58 58 50 96 42 58 4 50 42 42Z" fill="#1b263b"/><path d="M50 4 58 42 50 50Z M96 50 58 58 50 50Z M50 96 42 58 50 50Z M4 50 42 42 50 50Z" fill="#fff"/><circle cx="50" cy="50" r="5" fill="#1b263b"/></svg>
+    <span class="wm"><i>EXAM</i><b>COMPASS</b></span>
+  </a>
+  <nav id="nav"></nav>
+</header>
+<div class="quote" id="quote" role="button" tabindex="0" title="Show another quote"></div>
+<main id="app"></main>
+<div class="paper"><button id="paper">Get our e-newspaper @ ₹50/month</button></div>
+<footer>
+  <div><b>Contact us</b><span>contact@examcompass.in</span><span>+91-xxxxx-xxxxx</span></div>
+  <div><b>About us</b><button data-info="team">The team</button><button data-info="goal">Our goal</button></div>
+  <div class="legal"><button data-info="terms">Terms of service</button><button data-info="privacy">Privacy policy</button></div>
+</footer>
+<dialog id="dlg"></dialog>
+<div id="toast" role="status"></div>
+<script>// SAMPLE DATA: dates and age limits are placeholders. Always verify on the official site before relying on them.
+const FIELDS=["Commerce","Non-Medical","Medical","Architecture","Arts","Law"];
+const SECTORS=["Civil","Engg.","Banking","Medical","Law","Design","Education"];
+const QUOTES=["Small steps every day add up to big results.","You don't have to be perfect. You have to keep going.","Discipline is choosing what you want most over what you want now.","One more hour of focus today is one less worry on exam day.","Your future self is watching. Make them proud.","Consistency beats intensity.","Progress, not perfection.","You can do it. Start where you are."];
+const ALL=["Commerce","Non-Medical","Medical","Architecture","Arts","Law"];
+const EXAMS=[
+{id:"upsc",name:"UPSC Civil Services",sector:"Civil",fields:ALL,min:21,max:32,deadline:"2027-02-18",site:"https://upsc.gov.in",elig:"Bachelor's degree in any discipline from a recognised university.",syl:["Prelims: General Studies and CSAT","Mains: 9 papers including Essay, GS I to IV and an optional subject","Personality Test (interview)"]},
+{id:"ssc-cgl",name:"SSC CGL",sector:"Civil",fields:["Commerce","Arts","Non-Medical","Law"],min:18,max:32,deadline:"2027-01-10",site:"https://ssc.gov.in",elig:"Bachelor's degree from a recognised university.",syl:["Tier 1: Reasoning, Quant, English, General Awareness","Tier 2: Maths, English, Statistics, Finance and Accounts"]},
+{id:"ibps-po",name:"IBPS PO",sector:"Banking",fields:["Commerce","Arts","Non-Medical","Law"],min:20,max:30,deadline:"2026-12-05",site:"https://www.ibps.in",elig:"Graduate in any discipline.",syl:["Prelims: English, Quantitative Aptitude, Reasoning","Mains: Reasoning, Data Analysis, English, General/Economy/Banking Awareness","Interview"]},
+{id:"sbi-po",name:"SBI PO",sector:"Banking",fields:["Commerce","Arts","Non-Medical","Law"],min:21,max:30,deadline:"2027-01-25",site:"https://sbi.co.in/web/careers",elig:"Graduate in any discipline.",syl:["Prelims: English, Quant, Reasoning","Mains: Reasoning and Computer Aptitude, Data Analysis, General Awareness, English","Psychometric test, group exercise, interview"]},
+{id:"rbi-b",name:"RBI Grade B",sector:"Banking",fields:["Commerce","Arts","Non-Medical"],min:21,max:30,deadline:"2027-03-02",site:"https://www.rbi.org.in",elig:"Graduation with at least 60% marks (check the notification for relaxations).",syl:["Phase 1: General Awareness, English, Quant, Reasoning","Phase 2: Economic and Social Issues, Finance and Management, English"]},
+{id:"jee-main",name:"JEE Main",sector:"Engg.",fields:["Non-Medical"],min:17,max:25,deadline:"2026-11-30",site:"https://jeemain.nta.nic.in",elig:"Class 12 passed or appearing, with Physics, Chemistry and Maths.",syl:["Physics, Chemistry, Mathematics (Class 11 and 12 NCERT based)"]},
+{id:"gate",name:"GATE",sector:"Engg.",fields:["Non-Medical"],min:20,max:40,deadline:"2026-12-20",site:"https://gate2027.iitr.ac.in",elig:"Bachelor's degree (or final year) in Engineering, Technology, Architecture or Science.",syl:["General Aptitude","Engineering Mathematics","Core subject paper of your branch"]},
+{id:"neet-ug",name:"NEET UG",sector:"Medical",fields:["Medical"],min:17,max:25,deadline:"2027-02-08",site:"https://neet.nta.nic.in",elig:"Class 12 with Physics, Chemistry, Biology/Biotechnology and English.",syl:["Physics, Chemistry, Biology (Botany and Zoology) as per NMC syllabus"]},
+{id:"clat",name:"CLAT",sector:"Law",fields:["Law","Arts"],min:17,max:30,deadline:"2026-11-20",site:"https://consortiumofnlus.ac.in",elig:"Class 12 passed or appearing for the UG programme.",syl:["English Language","Current Affairs and GK","Legal Reasoning","Logical Reasoning","Quantitative Techniques"]},
+{id:"aibe",name:"AIBE",sector:"Law",fields:["Law"],min:21,max:50,deadline:"2026-12-12",site:"https://allindiabarcouncil.in",elig:"LL.B. degree and enrolment with a State Bar Council.",syl:["Open-book exam on core law subjects, ethics and procedure"]},
+{id:"nata",name:"NATA",sector:"Design",fields:["Architecture"],min:17,max:30,deadline:"2027-01-15",site:"https://www.nata.in",elig:"Class 12 with Physics and Maths (check the brochure for details).",syl:["Drawing and Composition","Mathematics, General Aptitude"]},
+{id:"cuet-ug",name:"CUET UG",sector:"Education",fields:["Arts","Commerce","Non-Medical","Medical"],min:17,max:25,deadline:"2027-02-28",site:"https://cuet.nta.nic.in",elig:"Class 12 passed or appearing.",syl:["Language test","Domain subjects","General test"]}];
+const UPDATES=[
+{e:"upsc",t:"Application form",x:"Notification released for Civil Services 2027",d:"2026-10-22"},
+{e:"ibps-po",t:"Admit card",x:"Prelims call letter available for download",d:"2026-10-21"},
+{e:"neet-ug",t:"Last date",x:"Registration closing soon, check your documents",d:"2026-10-20"},
+{e:"jee-main",t:"Application form",x:"Session 1 registration is open",d:"2026-10-19"},
+{e:"clat",t:"Result",x:"Provisional answer key published",d:"2026-10-18"},
+{e:"ssc-cgl",t:"Admit card",x:"Tier 1 city slips released",d:"2026-10-17"},
+{e:"gate",t:"Application form",x:"Registration window announced",d:"2026-10-16"},
+{e:"sbi-po",t:"Last date",x:"Fee payment window extended",d:"2026-10-15"},
+{e:"nata",t:"Result",x:"Scorecards available on the official portal",d:"2026-10-14"},
+{e:"aibe",t:"Admit card",x:"Hall tickets live for registered candidates",d:"2026-10-13"},
+{e:"rbi-b",t:"Application form",x:"Recruitment notice published",d:"2026-10-12"},
+{e:"cuet-ug",t:"Last date",x:"Correction window opens this week",d:"2026-10-11"}];
+</script>
+<script>const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const mem={};
+const store={
+  get(k){try{const v=localStorage.getItem(k);return v===null?(mem[k]??null):JSON.parse(v)}catch(e){return mem[k]??null}},
+  set(k,v){mem[k]=v;try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}},
+  del(k){delete mem[k];try{localStorage.removeItem(k)}catch(e){}}
+};
+const getEx=id=>EXAMS.find(e=>e.id===id);
+const fmt=d=>new Date(d+"T00:00:00").toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric"});
+const host=u=>new URL(u).hostname.replace(/^www\./,"");
+const daysLeft=d=>Math.ceil((new Date(d+"T00:00:00")-new Date().setHours(0,0,0,0))/864e5);
+const daysTag=d=>{const n=daysLeft(d);return n<0?'<span class="days">Closed</span>':`<span class="days ${n<=30?"soon":""}">${n} days left</span>`};
+let user=store.get("ec_user"),filt={age:user?user.age:24,sectors:[]},qi=Math.floor((Date.now()/864e5))%QUOTES.length;
+
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove("on"),2400)}
+function showQuote(){$("#quote").textContent="“"+QUOTES[qi]+"”"}
+function nav(){
+  $("#nav").innerHTML=user?'<button class="btn" id="prof">Profile</button>':'<button class="btn" id="login">Log in</button><button class="btn" id="signup">Sign up</button>';
+  if(user)$("#prof").onclick=profileDlg;else{$("#login").onclick=()=>authDlg("login");$("#signup").onclick=()=>authDlg("signup")}
+}
+function updatesHTML(list){
+  return list.map(u=>{const e=getEx(u.e);return `<a class="upd" href="#exam-${u.e}"><span class="tag">${u.t}</span><span>${esc(e.name)}: ${esc(u.x)}</span><small>${fmt(u.d)}. Source: ${host(e.site)}</small></a>`}).join("")||'<p class="empty">No updates yet for your field.</p>';
+}
+function examsHTML(list){
+  return list.map(e=>`<a class="ex" href="#exam-${e.id}"><b>${esc(e.name)}</b>${daysTag(e.deadline)}<small>${e.sector}, age ${e.min} to ${e.max}</small></a>`).join("")||'<p class="empty">No exams match. Widen the age or clear a sector.</p>';
+}
+function home(){
+  if(!user){
+    $("#app").innerHTML=`<h1>Every exam update, one stop.</h1><p class="sub">Verified updates from official sources, so you spend minutes a day instead of hours.</p>
+    <section class="card"><h2>Latest updates</h2><div class="in">${updatesHTML(UPDATES.slice(0,6))}</div></section>
+    <h3 class="cta">See eligible exams according to your field</h3>
+    <div class="fields">${FIELDS.map(f=>`<button aria-pressed="false" data-f="${f}">${f}</button>`).join("")}</div>
+    <section class="card" id="browse" hidden><h2 id="bt"></h2><div class="in" id="bl"></div></section>
+    <div class="reg">Register to access your personalised homepage</div>`;
+    document.querySelectorAll(".fields button").forEach(b=>b.onclick=()=>{
+      document.querySelectorAll(".fields button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+      $("#browse").hidden=false;$("#bt").textContent=b.dataset.f+" exams";
+      $("#bl").innerHTML=examsHTML(EXAMS.filter(e=>e.fields.includes(b.dataset.f)));
+    });
+    return;
+  }
+  const mine=EXAMS.filter(e=>e.fields.includes(user.field));
+  $("#app").innerHTML=`<h1>Hi, ${esc(user.name.split(" ")[0])}</h1><p class="sub">Showing ${esc(user.field)} exams for you.</p>
+  <section class="card"><h2>Latest ${esc(user.field)} updates</h2><div class="in">${updatesHTML(UPDATES.filter(u=>mine.some(e=>e.id===u.e)).slice(0,6))}</div></section>
+  <div class="two">
+   <section class="card"><h2>Eligible exams</h2><div class="in" id="list"></div></section>
+   <section class="card fl"><h2>Filters</h2><div class="in">
+     <label for="age">Age: <span id="av">${filt.age}</span></label><input id="age" type="range" min="16" max="50" value="${filt.age}">
+     <fieldset><legend>Sector</legend>${SECTORS.map(s=>`<label class="chip"><input type="checkbox" value="${s}" ${filt.sectors.includes(s)?"checked":""}>${s}</label>`).join("")}</fieldset>
+   </div></section>
+  </div>`;
+  const draw=()=>{$("#list").innerHTML=examsHTML(mine.filter(e=>e.min<=filt.age&&filt.age<=e.max&&(!filt.sectors.length||filt.sectors.includes(e.sector))))};
+  $("#age").oninput=e=>{filt.age=+e.target.value;$("#av").textContent=filt.age;draw()};
+  document.querySelectorAll(".chip input").forEach(c=>c.onchange=()=>{filt.sectors=[...document.querySelectorAll(".chip input:checked")].map(x=>x.value);draw()});
+  draw();
+}
+function examPage(id){
+  const e=getEx(id);if(!e){location.hash="";return}
+  const ok=user?(user.age>=e.min&&user.age<=e.max?'<span class="pill ok">You meet the age limit</span>':`<span class="pill no">Your age (${user.age}) is outside the limit</span>`):"";
+  const ups=UPDATES.filter(u=>u.e===id);
+  $("#app").innerHTML=`<button class="back" onclick="location.hash=''">Back to home</button>
+  <section class="card info"><div class="in"><h1>${esc(e.name)}</h1>${ok}
+  <dl><dt>Eligibility</dt><dd>${esc(e.elig)}</dd><dt>Age limit</dt><dd>${e.min} to ${e.max} years</dd>
+  <dt>Application deadline</dt><dd>${fmt(e.deadline)} ${daysTag(e.deadline)}</dd><dt>Syllabus</dt></dl>
+  <ul class="syl">${e.syl.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>
+  <div class="apply"><a class="btn" href="${e.site}" target="_blank" rel="noopener">Apply on ${host(e.site)} ↗</a></div></div></section>
+  ${ups.length?`<section class="card"><h2>Updates</h2><div class="in">${updatesHTML(ups)}</div></section>`:""}`;
+  scrollTo(0,0);
+}
+function route(){const h=location.hash.slice(1);h.startsWith("exam-")?examPage(h.slice(5)):home()}
+
+const dlg=$("#dlg");
+function open(html){dlg.innerHTML='<button class="x" aria-label="Close" onclick="dlg.close()">×</button>'+html;dlg.showModal()}
+function authDlg(mode){
+  const su=mode==="signup";
+  open(`<h2>${su?"Create your account":"Log in"}</h2><form id="af" method="dialog">
+   ${su?'<label>Name<input name="name" required autocomplete="name"></label>':""}
+   <label>Email<input name="email" type="email" required autocomplete="email"></label>
+   ${su?`<label>Age<input name="age" type="number" min="14" max="70" required></label><label>Your field<select name="field">${FIELDS.map(f=>`<option>${f}</option>`).join("")}</select></label>`:""}
+   <p class="err" id="err"></p><div class="row"><button class="btn" type="submit">${su?"Sign up":"Log in"}</button><button class="btn" type="button" id="sw">${su?"I have an account":"Create account"}</button></div></form>`);
+  $("#sw").onclick=()=>authDlg(su?"login":"signup");
+  $("#af").onsubmit=ev=>{
+    ev.preventDefault();const f=Object.fromEntries(new FormData(ev.target));f.email=f.email.trim().toLowerCase();
+    const users=store.get("ec_users")||{};
+    if(su){if(users[f.email]){$("#err").textContent="This email is already registered. Log in instead.";return}
+      f.age=+f.age;users[f.email]=f;store.set("ec_users",users)}
+    else if(!users[f.email]){$("#err").textContent="No account with this email. Sign up first.";return}
+    user=users[f.email];store.set("ec_user",user);filt.age=user.age;dlg.close();nav();route();toast("Welcome, "+user.name.split(" ")[0]);
+  };
+}
+function profileDlg(){
+  open(`<h2>Your profile</h2><form id="pf"><p>${esc(user.name)}<br>${esc(user.email)}</p>
+   <label>Age<input name="age" type="number" min="14" max="70" value="${user.age}"></label>
+   <label>Your field<select name="field">${FIELDS.map(f=>`<option ${f===user.field?"selected":""}>${f}</option>`).join("")}</select></label>
+   <div class="row"><button class="btn" type="submit">Save changes</button><button class="btn" type="button" id="lo">Log out</button></div></form>`);
+  $("#pf").onsubmit=ev=>{ev.preventDefault();const f=Object.fromEntries(new FormData(ev.target));
+    user={...user,age:+f.age,field:f.field};const u=store.get("ec_users")||{};u[user.email]=user;store.set("ec_users",u);store.set("ec_user",user);
+    filt.age=user.age;dlg.close();route();toast("Changes saved")};
+  $("#lo").onclick=()=>{store.del("ec_user");user=null;dlg.close();nav();location.hash="";route();toast("Logged out")};
+}
+const INFO={
+ team:["The team","Exam Compass is built by a student team to save aspirants time. Add your team details here."],
+ goal:["Our goal","One place for verified exam updates, so students and working professionals can spend their time preparing, not searching."],
+ terms:["Terms of service","Placeholder text. Add your terms of service before launch."],
+ privacy:["Privacy policy","Placeholder text. In this demo, account data stays in your own browser and is never sent anywhere."]};
+document.querySelectorAll("[data-info]").forEach(b=>b.onclick=()=>{const i=INFO[b.dataset.info];open(`<h2>${i[0]}</h2><p>${i[1]}</p>`)});
+$("#paper").onclick=()=>open(`<h2>E-newspaper</h2><p>A daily digest of verified exam news for ₹50/month. Leave your email and we will tell you when it opens.</p><form method="dialog"><label>Email<input type="email" required></label><div class="row"><button class="btn">Notify me</button></div></form>`);
+dlg.addEventListener("close",()=>{});
+dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+$("#quote").onclick=()=>{qi=(qi+1)%QUOTES.length;showQuote()};
+$("#quote").onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();$("#quote").click()}};
+addEventListener("hashchange",route);
+showQuote();nav();route();
+</script>
+</body>
+</html>
